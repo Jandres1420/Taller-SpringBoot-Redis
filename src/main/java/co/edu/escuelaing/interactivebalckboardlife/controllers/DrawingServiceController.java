@@ -15,6 +15,7 @@ import co.edu.escuelaing.interactivebalckboardlife.repositories.TicketRepository
 public class DrawingServiceController {
     @Autowired
     private TicketRepository ticketRepository;
+
     @GetMapping("/status")
     public String status() {
         return "{\"status\":\"Greetings from Spring Boot. " +
@@ -25,8 +26,8 @@ public class DrawingServiceController {
 
     @GetMapping("/getticket")
     public String getTicket() {
-    
-    return "{\"ticket\":\"" +
-            ticketRepository.getTicket() + "\"}";
+
+        return "{\"ticket\":\"" +
+                ticketRepository.getTicket() + "\"}";
     }
 }

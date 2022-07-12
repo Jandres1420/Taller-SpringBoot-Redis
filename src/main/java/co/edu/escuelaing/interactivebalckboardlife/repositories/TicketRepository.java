@@ -10,6 +10,7 @@ import org.springframework.data.redis.core.ListOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
+
 //Si tiene component de por si ya es signgleton y no toca ponerlo y toca llamarlo con autowired en el controlador
 @Component
 public class TicketRepository {
